@@ -653,6 +653,7 @@ require('lazy').setup({
         -- java_language_server = {}, -- needs java
         -- gitlab_ci_ls = {}, -- needs cargo/rust
         powershell_es = {},
+        taplo = {},
         yamlls = {
           settings = {
             yaml = {
