@@ -203,6 +203,16 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- [[ Neovide settings ]]
+-- Put anything you want to happen only in Neovide here
+local transparent_background = true -- this is read when setting up catppuccin colorscheme
+if vim.g.neovide then
+  vim.g.neovide_transparency = 0.94
+  vim.g.neovide_normal_opacity = 1
+  vim.g.neovide_cursor_animation_length = 0
+  transparent_background = false
+end
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -869,7 +879,7 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.
     opts = {
       flavour = 'mocha',
-      transparent_background = true,
+      transparent_background = transparent_background, -- When in Neovide, this is set to false, otherwise true
     },
     init = function()
       -- Load the colorscheme here.
