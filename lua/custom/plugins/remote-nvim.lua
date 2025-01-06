@@ -12,5 +12,16 @@ return {
       enabled = true,
       no_github = false,
     },
+    remote = {
+      copy_dirs = {
+        state = {
+          base = vim.fn.stdpath 'data',
+          dirs = '*',
+          compression = {
+            enabled = true,
+          },
+        },
+      },
+    },
   },
 }
