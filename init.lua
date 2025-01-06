@@ -652,7 +652,7 @@ require('lazy').setup({
         dockerls = {},
         -- java_language_server = {}, -- needs java
         -- gitlab_ci_ls = {}, -- needs cargo/rust
-        powershell_es = {},
+        -- powershell_es = {}, -- needs new pwsh.exe
         taplo = {},
         yamlls = {
           settings = {
