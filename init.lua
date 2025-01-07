@@ -328,7 +328,7 @@ require('lazy').setup({
         { '<leader>b', group = '[B]uffer/tab' },
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
-        { '<leader>l', group = '[L]azy[G]it' },
+        { '<leader>l', group = '[L]azyGit/Docker' },
         { '<leader>r', group = '[R]ename/[R]emote' },
         { '<leader>s', group = '[S]earch' },
         { '<leader>w', group = '[W]orkspace' },
