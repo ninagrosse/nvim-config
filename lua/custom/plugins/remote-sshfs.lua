@@ -2,6 +2,11 @@ return {
   'nosduco/remote-sshfs.nvim',
   dependencies = { 'nvim-telescope/telescope.nvim' },
   opts = {
+    connections = {
+      sshfs_args = {
+        '-o follow_symlinks',
+      },
+    },
     -- Refer to the configuration section below
     -- or leave empty for defaults
   },
