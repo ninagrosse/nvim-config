@@ -9,6 +9,8 @@ return {
     vim.g.barbar_auto_setup = false
   end,
   keys = {
+    { '<C-n>', '<cmd>BufferNext<cr>', { silent = true, desc = 'next buffer/tab' } },
+    { '<C-p>', '<cmd>BufferPrevious<cr>', { silent = true, desc = 'previous buffer/tab' } },
     { '<leader>bl', '<cmd>BufferNext<cr>', { silent = true, desc = 'next buffer/tab' } },
     { '<leader>bh', '<cmd>BufferPrevious<cr>', { silent = true, desc = 'previous buffer/tab' } },
     { '<leader>bc', '<cmd>BufferClose<cr>', { silent = true, desc = 'close buffer/tab' } },
