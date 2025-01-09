@@ -38,11 +38,6 @@ set ReplaceWithRegister
 set surround
 set nerdtree
 
-" Searching Plugins
-set sneak
-set easymotion
-let g:EasyMotion_override_acejump = 0
-
 " Highlighting Plugins
 set highlightedyank
 set quickscope
@@ -95,9 +90,8 @@ nmap <C-S-m> <Action>(ToolWindowsGroup)
 "" Leader Commands
 "" ========================================================
 
-" EasyMotion
-let g:WhichKeyDesc_easymotion = "<leader><leader> EasyMotion"
-
+" vim-flash instead of sneak / easymotion
+map s <Action>(flash.search)
 
 " Information commands
 nmap <leader>ie <action>(ShowErrorDescription)
